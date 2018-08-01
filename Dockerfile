@@ -17,3 +17,9 @@ COPY . .
 
 EXPOSE 3000
 CMD [ "npm", "start" ]
+
+# Healthcheck of the deployed application 
+# What intervals, retries, timeout : After the first check wait for this timeout to try again, start-period: The time to 
+# spin the application. Use Curl command to check the docker internal docker port and use localhost
+# 
+# HEALTHCHECK --interval=15s --retries=5 --timeout=30s --start-period=30s CMD curl -I -f "http://localhost:3000" || exit 1
