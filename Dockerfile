@@ -8,6 +8,9 @@ WORKDIR /usr/src/app
 # where available (npm@5+)
 COPY package*.json ./
 
+# Install curl command inside docker CONTAINER for healthcheck
+# RUN apt-get update && apt-get install -y --no-install-recommends curl && apt-get clean
+
 RUN npm install
 # If you are building your code for production
 # RUN npm install --only=production
