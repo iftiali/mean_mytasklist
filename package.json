@@ -10,9 +10,9 @@
   "author": "Iftikhar Ali <iali@estateably.com>",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.15.2",
+    "body-parser": "^1.20.4",
     "ejs": "^2.5.2",
-    "express": "^4.14.0",
+    "express": "^4.22.0",
     "mongojs": "^2.4.0"
   },
   "repository": {
